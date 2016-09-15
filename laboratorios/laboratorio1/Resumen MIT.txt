@@ -1,0 +1,8 @@
+Licencia MIT: 
+
+Licencia creada por el Instituto Tecnológico de Massachussetts, de ahí sus siglas (Massachusetts Institute of Technology).
+Ésta licencia tiene su código fuente abierto, y se caracteriza por tener 2 clausulas que podrían invalidar la licencia, una de ellas es 
+el agregar una nota con el copyright y la otra agregar dentro de dicha nota los derechos que tiene el usuario de éste software. 
+Cabe resaltar que ésta nota debe adjuntarse a cada uno de los derivados o copias del software realizados con éste tipo de licencia.
+En cuestión de derechos ofrecidos por ésta se pueden destacar el hecho de poder copiar, modificar, integrar con otro software, publicar, 
+sub-licenciar, vender e incluso no liberar o compartir los cambios realizados en el código de dicho software.
