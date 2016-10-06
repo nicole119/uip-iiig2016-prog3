@@ -1,0 +1,30 @@
+x = True
+frase=0
+cagua=0
+cfuego=0
+agre = []
+
+Fuego = []
+Agua = []
+
+print("Programa frases escriba 'salir' para terminar")
+
+while x :
+        frase = input("digite una frase ")
+        if "agua" in frase:
+            cagua=cagua+1
+            Agua.append(frase)
+        elif "fuego" in frase:
+            cfuego=cfuego+1
+            Fuego.append(frase)
+        elif "agua" in frase and "fuego" in frase:
+            agre.append(frase)
+            Agua.append(frase)
+            Fuego.append(frase)
+        elif frase == "salir":
+            x = False
+print("cantidad de agua: " ,cagua)
+print(Agua)
+print("cantidad de fuego: " ,cfuego)
+print(Fuego)
+
