@@ -1,0 +1,42 @@
+import os
+
+class Estudiante(object):
+    cont = 0
+
+    def __init__(self, nom, nota=[], prom=0):
+        self.nom = nom
+        self.nota = [nota]
+        self.prom = prom
+        Estudiante.cont +=1
+
+    def MostrarEst(self):
+        print(str("Estudiante: " + self.nom + "Notas: " + self.nota + " Promedio final: " + self.prom))
+
+    def MostrarCont(self):
+        print("Estudiantes totales: " + str(Estudiante.cont))
+
+    def calcular(self):
+        return self.nota,[]/3
+
+while True:
+    print("\nPROGRARAMA CALCULAR PROMEDIOS")
+    opc = int(input("\nINGRESA EL NUMERO DE OPCION DESEADA: \n1.Crear estudiante \n2.Mostrar data \n3.Salir\n"))
+    if opc == 1:
+        n = []
+        nom = (input("Ingrese Nombre: "))
+
+        for x in range(0, 3):
+            notas = float(input("Ingrese la notas a evaluar: "))
+            if notas < 0 or notas > 100:
+                print("Las calificaciones son de 0 a 100")
+            else:
+                n.append(notas)
+        Estudiante.calcular(n)
+        Estudiante(nom, n, Estudiante.calcular(n))
+
+    elif opc == 2:
+        Estudiante.MostrarEst()
+    elif opc == 3:
+        print("Hasta luego!")
+        break
+False
