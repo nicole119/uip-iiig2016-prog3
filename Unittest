@@ -1,0 +1,31 @@
+class Cuenta(object):
+    """
+    Atributos:
+        nom: nombre en string
+        sal: saldo disponible en float
+    """
+
+    def __init__(self, nom, acc, sal=0.0):
+        """Debe retornar nombre y balance"""
+        self.nom = nom
+        self.acc = acc
+        self.sal = sal
+
+    def retiro(self, monto):
+        """debe retornar saldo despues del retiro"""
+        if monto > self.sal:
+            raise RuntimeError('Monto mayor a saldo disponible')
+        self.sal -= monto
+        return self.sal
+
+    def deposit(self, monto):
+        """debe retornar nuevo saldo luego de depositar"""
+        self.sal += monto
+        return self.sal
+
+    def mostrar(self):
+        print("\nCliente: "+str(self.nom)+"\nCuenta:"+str(self.acc)+"\nSaldo:"+str(self.sal))
+
+c1 = Cuenta("Alberto", 12345, 2050)
+c1.retiro(50)
+c1.mostrar()
