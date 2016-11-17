@@ -1,0 +1,8 @@
+from unittest import TestCase
+from Quiz10 import Cuenta
+
+
+class TestCuenta(TestCase):
+    def test_retiro(self):
+        t = Cuenta("Oliver", 12345, 2050.00)
+        self.assertEqual(t.retiro(50), 2000)
