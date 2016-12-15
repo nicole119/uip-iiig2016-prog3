@@ -19,7 +19,7 @@ class book(object):
 
 		return l
 
-#Eta funcion maeja la insercion de nombres
+#Esta funcion maneja la insercion de nombres
 	def insert_name(self,newname,newemail):
 		newname = {'name':newname,'email':newemail}
 		self.mynames.insert(newname)
